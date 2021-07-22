@@ -32,7 +32,7 @@
     "spriteId": {"name":"s_skeleton_attack_one_damage","path":"sprites/s_skeleton_attack_one_damage/s_skeleton_attack_one_damage.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 15.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

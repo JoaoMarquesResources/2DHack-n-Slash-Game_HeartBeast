@@ -44,7 +44,7 @@
     "spriteId": {"name":"s_skeleton_attack_one","path":"sprites/s_skeleton_attack_one/s_skeleton_attack_one.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 15.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
