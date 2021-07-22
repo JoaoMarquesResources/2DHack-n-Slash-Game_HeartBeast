@@ -1,6 +1,19 @@
 {
   "resources": [
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"s_skeleton_mask","path":"sprites/s_skeleton_mask/s_skeleton_mask.yy",},"order":9,},
+    {"id":{"name":"s_skeleton_idle","path":"sprites/s_skeleton_idle/s_skeleton_idle.yy",},"order":8,},
+    {"id":{"name":"s_skeleton_roll","path":"sprites/s_skeleton_roll/s_skeleton_roll.yy",},"order":10,},
+    {"id":{"name":"s_skeleton_attack_three_damage","path":"sprites/s_skeleton_attack_three_damage/s_skeleton_attack_three_damage.yy",},"order":3,},
+    {"id":{"name":"o_skeleton","path":"objects/o_skeleton/o_skeleton.yy",},"order":0,},
+    {"id":{"name":"s_skeleton_run","path":"sprites/s_skeleton_run/s_skeleton_run.yy",},"order":11,},
+    {"id":{"name":"s_skeleton_attack_two_damage","path":"sprites/s_skeleton_attack_two_damage/s_skeleton_attack_two_damage.yy",},"order":5,},
+    {"id":{"name":"s_skeleton_bones","path":"sprites/s_skeleton_bones/s_skeleton_bones.yy",},"order":6,},
+    {"id":{"name":"s_skeleton_attack_one","path":"sprites/s_skeleton_attack_one/s_skeleton_attack_one.yy",},"order":0,},
+    {"id":{"name":"s_skeleton_attack_two","path":"sprites/s_skeleton_attack_two/s_skeleton_attack_two.yy",},"order":4,},
+    {"id":{"name":"s_skeleton_hitstun","path":"sprites/s_skeleton_hitstun/s_skeleton_hitstun.yy",},"order":7,},
+    {"id":{"name":"s_skeleton_attack_three","path":"sprites/s_skeleton_attack_three/s_skeleton_attack_three.yy",},"order":2,},
+    {"id":{"name":"s_skeleton_attack_one_damage","path":"sprites/s_skeleton_attack_one_damage/s_skeleton_attack_one_damage.yy",},"order":1,},
+    {"id":{"name":"r_graveyard","path":"rooms/r_graveyard/r_graveyard.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -16,7 +29,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"r_graveyard","path":"rooms/r_graveyard/r_graveyard.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -33,6 +46,7 @@
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Skeleton.yy","order":12,"resourceVersion":"1.0","name":"Skeleton","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
