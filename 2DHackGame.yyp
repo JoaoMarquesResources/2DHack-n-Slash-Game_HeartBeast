@@ -6,6 +6,7 @@
     {"id":{"name":"s_skeleton_attack_three_damage","path":"sprites/s_skeleton_attack_three_damage/s_skeleton_attack_three_damage.yy",},"order":3,},
     {"id":{"name":"o_skeleton","path":"objects/o_skeleton/o_skeleton.yy",},"order":0,},
     {"id":{"name":"s_skeleton_run","path":"sprites/s_skeleton_run/s_skeleton_run.yy",},"order":11,},
+    {"id":{"name":"o_Game","path":"objects/o_Game/o_Game.yy",},"order":2,},
     {"id":{"name":"s_skeleton_attack_two_damage","path":"sprites/s_skeleton_attack_two_damage/s_skeleton_attack_two_damage.yy",},"order":5,},
     {"id":{"name":"s_skeleton_bones","path":"sprites/s_skeleton_bones/s_skeleton_bones.yy",},"order":6,},
     {"id":{"name":"s_wall","path":"sprites/s_wall/s_wall.yy",},"order":13,},
