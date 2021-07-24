@@ -85,7 +85,6 @@ switch (state)
 	
 	case "attack two":
 		#region Attack state 2
-		
 		set_state_sprite(s_skeleton_attack_two, 0.7, 0);
 		
 		hsp = 0;
@@ -95,13 +94,33 @@ switch (state)
 			state = "move";
 		}
 		
-		/*//Go to state attack
+		//Go to state attack
 		if (attack && animation_hit_frame_range(2, 4))
 		{
-			state = "attack two";
+			state = "attack three";
 			image_index = 0;
 		}
-		*/
+		
+		//Go to state Rolling
+		if (roll)
+		{
+			image_index = 0;
+			state = "roll";
+		}
+		#endregion
+		break;
+		
+	case "attack three":
+		#region Attack state three
+		set_state_sprite(s_skeleton_attack_three, 0.7, 0);
+		
+		hsp = 0;
+		//Go to move state
+		if (image_index >= 5)
+		{
+			state = "move";
+		}
+		
 		//Go to state Rolling
 		if (roll)
 		{
