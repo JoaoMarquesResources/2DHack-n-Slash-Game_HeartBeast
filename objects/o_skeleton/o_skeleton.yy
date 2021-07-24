@@ -10,7 +10,10 @@
     "path": "sprites/s_skeleton_mask/s_skeleton_mask.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "o_lifeform",
+    "path": "objects/o_lifeform/o_lifeform.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

@@ -29,6 +29,11 @@ switch(state)
 		#region Attack state
 		set_state_sprite(s_knight_attack, 0.7, 0);
 		
+		if (animation_hit_frame_range(3, 4))
+		{
+			create_hitbox(x, y, self, s_skeleton_attack_one_damage, 4, 4, 1, image_xscale);
+		}
+		
 		if (image_index >= 10)
 		{
 			state = "chase";
