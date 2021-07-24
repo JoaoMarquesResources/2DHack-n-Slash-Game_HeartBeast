@@ -16,12 +16,12 @@ switch (state)
 		if (left || right)
 		{
 			sprite_index = s_skeleton_run;
-			image_speed = 0.6;
+			image_speed = 0.7;
 		}
 		if (left && right) || (hsp = 0)
 		{
 			sprite_index = s_skeleton_idle;
-			image_speed = 0.6;
+			image_speed = 0.5;
 		}
 		
 		//Go to state attack
@@ -42,8 +42,7 @@ switch (state)
 		
 	case "roll":
 		#region Roll State
-		sprite_index = s_skeleton_roll;
-		image_speed = 0.6;
+		set_state_sprite(s_skeleton_roll, 0.7, 0);
 		//Go to state move
 		if (image_index >= 6)
 		{
@@ -61,15 +60,48 @@ switch (state)
 	
 	case "attack one":
 		#region Attack state
-		sprite_index = s_skeleton_attack_one;
-		image_speed = 0.6;
+		set_state_sprite(s_skeleton_attack_one, 0.7, 0);
 		hsp = 0;
+		//Go to move state
 		if (image_index >= 4)
 		{
 			state = "move";
-			image_index = 0;
 		}
 		
+		//Go to state attack
+		if (attack && animation_hit_frame_range(2, 4))
+		{
+			state = "attack two";
+		}
+		
+		//Go to state Rolling
+		if (roll)
+		{
+			image_index = 0;
+			state = "roll";
+		}
+		#endregion
+		break;
+	
+	case "attack two":
+		#region Attack state 2
+		
+		set_state_sprite(s_skeleton_attack_two, 0.7, 0);
+		
+		hsp = 0;
+		//Go to move state
+		if (image_index >= 4)
+		{
+			state = "move";
+		}
+		
+		/*//Go to state attack
+		if (attack && animation_hit_frame_range(2, 4))
+		{
+			state = "attack two";
+			image_index = 0;
+		}
+		*/
 		//Go to state Rolling
 		if (roll)
 		{
