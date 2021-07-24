@@ -7,6 +7,8 @@
     {"id":{"name":"move_and_colide","path":"scripts/move_and_colide/move_and_colide.yy",},"order":0,},
     {"id":{"name":"animation_hit_frame","path":"scripts/animation_hit_frame/animation_hit_frame.yy",},"order":3,},
     {"id":{"name":"s_knight_die","path":"sprites/s_knight_die/s_knight_die.yy",},"order":2,},
+    {"id":{"name":"create_hitbox","path":"scripts/create_hitbox/create_hitbox.yy",},"order":4,},
+    {"id":{"name":"o_hitbox","path":"objects/o_hitbox/o_hitbox.yy",},"order":4,},
     {"id":{"name":"s_skeleton_roll","path":"sprites/s_skeleton_roll/s_skeleton_roll.yy",},"order":10,},
     {"id":{"name":"s_skeleton_attack_three_damage","path":"sprites/s_skeleton_attack_three_damage/s_skeleton_attack_three_damage.yy",},"order":3,},
     {"id":{"name":"o_skeleton","path":"objects/o_skeleton/o_skeleton.yy",},"order":0,},

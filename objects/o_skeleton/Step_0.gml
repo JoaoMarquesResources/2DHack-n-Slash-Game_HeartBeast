@@ -28,7 +28,7 @@ switch (state)
 		if (attack)
 		{
 			image_index = 0;
-			state = "attack one";
+			state = "attack three";
 		}
 		
 		//Go to state Rolling
@@ -61,6 +61,12 @@ switch (state)
 	case "attack one":
 		#region Attack state
 		set_state_sprite(s_skeleton_attack_one, 0.7, 0);
+		
+		if (image_index == 0)
+		{
+			create_hitbox(x, y, id, s_skeleton_attack_one_damage, 4, 4, 1, image_xscale);
+		}
+		
 		hsp = 0;
 		//Go to move state
 		if (image_index >= 4)
@@ -86,6 +92,11 @@ switch (state)
 	case "attack two":
 		#region Attack state 2
 		set_state_sprite(s_skeleton_attack_two, 0.7, 0);
+		
+		if (image_index == 0)
+		{
+			create_hitbox(x, y, id, s_skeleton_attack_two_damage, 4, 4, 1, image_xscale);
+		}
 		
 		hsp = 0;
 		//Go to move state
@@ -113,6 +124,11 @@ switch (state)
 	case "attack three":
 		#region Attack state three
 		set_state_sprite(s_skeleton_attack_three, 0.7, 0);
+		
+		if (image_index == 0)
+		{
+			create_hitbox(x, y, id, s_skeleton_attack_three_damage, 4, 4, 1, image_xscale);
+		}
 		
 		hsp = 0;
 		//Go to move state
