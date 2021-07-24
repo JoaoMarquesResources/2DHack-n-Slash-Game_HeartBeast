@@ -57,9 +57,6 @@
     {"compositeImage":{"FrameId":{"name":"d84de53a-5e78-41f7-a8ab-ff7a220ba2bd","path":"sprites/s_knight_attack/s_knight_attack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"d84de53a-5e78-41f7-a8ab-ff7a220ba2bd","path":"sprites/s_knight_attack/s_knight_attack.yy",},"LayerId":{"name":"5ba44f2d-7b50-4035-bfa9-22c4f68c19e7","path":"sprites/s_knight_attack/s_knight_attack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"s_knight_attack","path":"sprites/s_knight_attack/s_knight_attack.yy",},"resourceVersion":"1.0","name":"d84de53a-5e78-41f7-a8ab-ff7a220ba2bd","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"562bed39-7bff-4fb6-aa13-5f95bd8c88bb","path":"sprites/s_knight_attack/s_knight_attack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"562bed39-7bff-4fb6-aa13-5f95bd8c88bb","path":"sprites/s_knight_attack/s_knight_attack.yy",},"LayerId":{"name":"5ba44f2d-7b50-4035-bfa9-22c4f68c19e7","path":"sprites/s_knight_attack/s_knight_attack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_knight_attack","path":"sprites/s_knight_attack/s_knight_attack.yy",},"resourceVersion":"1.0","name":"562bed39-7bff-4fb6-aa13-5f95bd8c88bb","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"s_knight_attack","path":"sprites/s_knight_attack/s_knight_attack.yy",},
@@ -69,7 +66,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 12.0,
+    "length": 11.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -84,8 +81,7 @@
             {"id":"004349ba-5bd2-4ede-a8bc-5e46bca40e4f","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9565188b-dd9c-4a2d-8a15-6bf301af9c47","path":"sprites/s_knight_attack/s_knight_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3c18a7b2-a06f-47ab-9e0c-7a95c418d599","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"63db3295-30e5-4ffe-a262-8d0c80138f04","path":"sprites/s_knight_attack/s_knight_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5b9dddff-d7a6-4264-9844-0c14baa439a0","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c2660c0b-fd3b-4210-b365-f81455287341","path":"sprites/s_knight_attack/s_knight_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"368f61a9-3eee-4a74-b53a-541bc971a475","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d84de53a-5e78-41f7-a8ab-ff7a220ba2bd","path":"sprites/s_knight_attack/s_knight_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"efb73484-2bca-496a-9675-fc34171de874","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"562bed39-7bff-4fb6-aa13-5f95bd8c88bb","path":"sprites/s_knight_attack/s_knight_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"979ca56c-ec0f-4ed3-a471-68768529dfd2","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d84de53a-5e78-41f7-a8ab-ff7a220ba2bd","path":"sprites/s_knight_attack/s_knight_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
