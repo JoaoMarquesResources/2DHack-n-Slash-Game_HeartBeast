@@ -27,7 +27,7 @@ switch(state)
 		
 	case "attack":
 		#region Attack state
-		set_state_sprite(s_knight_attack, 0.6, 0);
+		set_state_sprite(s_knight_attack, 0.7, 0);
 		
 		if (image_index >= 10)
 		{
