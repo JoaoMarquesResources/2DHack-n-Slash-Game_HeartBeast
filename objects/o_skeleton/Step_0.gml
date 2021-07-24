@@ -1,8 +1,8 @@
 /// @description desc
 left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
-roll = keyboard_check(vk_space);
-attack = keyboard_check(vk_shift);
+roll = keyboard_check_pressed(vk_space);
+attack = keyboard_check_pressed(vk_shift);
 
 var move = (right - left)
 hsp = move * walkspd;
@@ -69,7 +69,7 @@ switch (state)
 		}
 		
 		//Go to state attack
-		if (attack && animation_hit_frame_range(2, 4))
+		if (attack && animation_hit_frame_range(1, 4))
 		{
 			state = "attack two";
 		}

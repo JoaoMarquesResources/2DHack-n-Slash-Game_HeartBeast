@@ -19,7 +19,6 @@
     {"id":{"name":"s_skeleton_attack_three","path":"sprites/s_skeleton_attack_three/s_skeleton_attack_three.yy",},"order":2,},
     {"id":{"name":"set_state_sprite","path":"scripts/set_state_sprite/set_state_sprite.yy",},"order":2,},
     {"id":{"name":"s_skeleton_attack_one_damage","path":"sprites/s_skeleton_attack_one_damage/s_skeleton_attack_one_damage.yy",},"order":1,},
-    {"id":{"name":"Object4","path":"objects/Object4/Object4.yy",},"order":3,},
     {"id":{"name":"r_graveyard","path":"rooms/r_graveyard/r_graveyard.yy",},"order":0,},
   ],
   "Options": [
