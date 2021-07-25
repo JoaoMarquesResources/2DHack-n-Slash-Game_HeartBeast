@@ -62,9 +62,9 @@ switch (state)
 		#region Attack state
 		set_state_sprite(s_skeleton_attack_one, 0.7, 0);
 		
-		if (animation_hit_frame_range(2, 4))
+		if (animation_hit_frame_range(0, 4))
 		{
-			create_hitbox(x, y, self, s_skeleton_attack_one_damage, 4, 4, 1, image_xscale);
+			create_hitbox(x, y, self, s_skeleton_attack_one_damage, 4, 4, 5, image_xscale);
 		}
 		
 		hsp = 0;
@@ -93,9 +93,9 @@ switch (state)
 		#region Attack state 2
 		set_state_sprite(s_skeleton_attack_two, 0.7, 0);
 		
-		if (animation_hit_frame_range(2, 4))
+		if (animation_hit_frame_range(1, 4))
 		{
-			create_hitbox(x, y, self, s_skeleton_attack_two_damage, 4, 4, 1, image_xscale);
+			create_hitbox(x, y, self, s_skeleton_attack_two_damage, 4, 4, 5, image_xscale);
 		}
 		
 		hsp = 0;
@@ -125,9 +125,9 @@ switch (state)
 		#region Attack state three
 		set_state_sprite(s_skeleton_attack_three, 0.7, 0);
 		
-		if (animation_hit_frame_range(3, 5))
+		if (animation_hit_frame_range(2, 5))
 		{
-			create_hitbox(x, y, self, s_skeleton_attack_three_damage, 4, 4, 1, image_xscale);
+			create_hitbox(x, y, self, s_skeleton_attack_three_damage, 4, 4, 5, image_xscale);
 		}
 		
 		hsp = 0;
