@@ -31,6 +31,7 @@
     {"id":{"name":"s_skeleton_attack_one","path":"sprites/s_skeleton_attack_one/s_skeleton_attack_one.yy",},"order":0,},
     {"id":{"name":"o_Knight","path":"objects/o_Knight/o_Knight.yy",},"order":3,},
     {"id":{"name":"s_fence","path":"sprites/s_fence/s_fence.yy",},"order":1,},
+    {"id":{"name":"o_parallax","path":"objects/o_parallax/o_parallax.yy",},"order":7,},
     {"id":{"name":"s_skeleton_attack_two","path":"sprites/s_skeleton_attack_two/s_skeleton_attack_two.yy",},"order":4,},
     {"id":{"name":"s_skeleton_hitstun","path":"sprites/s_skeleton_hitstun/s_skeleton_hitstun.yy",},"order":7,},
     {"id":{"name":"s_knight_attack","path":"sprites/s_knight_attack/s_knight_attack.yy",},"order":1,},
