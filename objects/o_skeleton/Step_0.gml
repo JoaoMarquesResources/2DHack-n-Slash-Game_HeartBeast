@@ -67,7 +67,7 @@ switch (state)
 		
 		if ((animation_hit_frame_range(0, 4)) && createHitBox)
 		{
-			create_hitbox(x, y, self, s_skeleton_attack_one_damage, 4, 4, 5, image_xscale);
+			create_hitbox(x, y, self, s_skeleton_attack_one_damage, 3, 4, 5, image_xscale);
 			createHitBox = false;
 		}
 		
@@ -98,9 +98,9 @@ switch (state)
 		#region Attack state 2
 		set_state_sprite(s_skeleton_attack_two, 0.7, 0);
 		
-		if ((animation_hit_frame_range(0, 4)) && createHitBox)
+		if ((animation_hit_frame_range(1, 4)) && createHitBox)
 		{
-			create_hitbox(x, y, self, s_skeleton_attack_two_damage, 4, 4, 5, image_xscale);
+			create_hitbox(x, y, self, s_skeleton_attack_two_damage, 3, 4, 5, image_xscale);
 			createHitBox = false;
 		}
 		
@@ -132,9 +132,9 @@ switch (state)
 		#region Attack state three
 		set_state_sprite(s_skeleton_attack_three, 0.7, 0);
 		
-		if ((animation_hit_frame_range(0, 4)) && createHitBox)
+		if ((animation_hit_frame_range(2, 5)) && createHitBox)
 		{
-			create_hitbox(x, y, self, s_skeleton_attack_three_damage, 4, 4, 5, image_xscale);
+			create_hitbox(x, y, self, s_skeleton_attack_three_damage, 5, 4, 5, image_xscale);
 			createHitBox = false;
 		}
 		
@@ -152,6 +152,11 @@ switch (state)
 			state = "roll";
 		}
 		#endregion
+		break;
+		
+	default:
+		show_debug_message("---------------------State " + state + " does not exists-------------------------");
+		state = "move";
 		break;
 }
 show_debug_message("-------------------" + string(createHitBox) + "-------------------")

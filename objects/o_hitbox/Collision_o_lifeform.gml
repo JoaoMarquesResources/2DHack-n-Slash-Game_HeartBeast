@@ -6,6 +6,8 @@ if (creator == noone || creator == other || ds_list_find_index(hit_objects, othe
 
 other.hp -= damage;
 ds_list_add(hit_objects, other); //Guardando na lista o id do objeto q colidiu
+other.state = "knockback";
+other.knockback_speed = knockback * image_xscale; //* image_xscale para virar certo
 
 show_debug_message(other.hp);
 show_debug_message(ds_list_find_index(hit_objects, other))

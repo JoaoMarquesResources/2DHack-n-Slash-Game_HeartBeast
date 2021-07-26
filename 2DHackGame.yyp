@@ -10,6 +10,7 @@
     {"id":{"name":"s_knight_die","path":"sprites/s_knight_die/s_knight_die.yy",},"order":2,},
     {"id":{"name":"create_hitbox","path":"scripts/create_hitbox/create_hitbox.yy",},"order":4,},
     {"id":{"name":"o_hitbox","path":"objects/o_hitbox/o_hitbox.yy",},"order":4,},
+    {"id":{"name":"approach","path":"scripts/approach/approach.yy",},"order":5,},
     {"id":{"name":"s_skeleton_roll","path":"sprites/s_skeleton_roll/s_skeleton_roll.yy",},"order":10,},
     {"id":{"name":"s_skeleton_attack_three_damage","path":"sprites/s_skeleton_attack_three_damage/s_skeleton_attack_three_damage.yy",},"order":3,},
     {"id":{"name":"o_skeleton","path":"objects/o_skeleton/o_skeleton.yy",},"order":0,},

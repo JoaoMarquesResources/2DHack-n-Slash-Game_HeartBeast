@@ -3,6 +3,7 @@ switch(state)
 {
 	case "chase":
 		#region Chase state
+		createHitBox2 = true;
 		set_state_sprite(s_knight_walk, 0.5, 0);
 		if (!instance_exists(o_skeleton)) break;
 		
@@ -19,7 +20,8 @@ switch(state)
 		}
 		else
 		{
-			//state = "attack";
+			createHitBox2 = true;
+			state = "attack";
 		}
 		
 		#endregion
@@ -29,9 +31,10 @@ switch(state)
 		#region Attack state
 		set_state_sprite(s_knight_attack, 0.7, 0);
 		
-		if (animation_hit_frame_range(3, 4))
+		if ((animation_hit_frame_range(3, 4)) && createHitBox2)
 		{
 			create_hitbox(x, y, self, s_skeleton_attack_one_damage, 4, 4, 10, image_xscale);
+			createHitBox2 = false;
 		}
 		
 		if (image_index >= 10)
@@ -40,5 +43,22 @@ switch(state)
 		}
 		
 		#endregion
+		break;
+	
+	case "knockback":
+		#region Knockback state
+		set_state_sprite(s_knight_hitstun, 0, 0);
+		image_xscale = -sign(knockback_speed);
+		move_and_colide(knockback_speed, 0);
+		knockback_speed = approach(knockback_speed, 0, 0.3);
+		if (knockback_speed == 0){
+			state = "chase";
+		}
+		#endregion
+		break;
+	
+	default:
+		show_debug_message("--------------------State " + state + " does not exists-----------------");
+		state = "chase";
 		break;
 }
