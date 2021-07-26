@@ -19,7 +19,7 @@ switch(state)
 		}
 		else
 		{
-			state = "attack";
+			//state = "attack";
 		}
 		
 		#endregion

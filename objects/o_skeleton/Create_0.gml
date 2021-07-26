@@ -5,3 +5,5 @@ state = "move";
 hsp = 0;
 vsp = 0;
 walkspd = 4;
+
+createHitBox = true;

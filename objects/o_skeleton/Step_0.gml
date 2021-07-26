@@ -13,6 +13,7 @@ switch (state)
 {
 	case "move":
 		#region Move State
+		createHitBox = true;
 		if (left || right)
 		{
 			sprite_index = s_skeleton_run;
@@ -27,6 +28,7 @@ switch (state)
 		//Go to state attack
 		if (attack)
 		{
+			createHitBox = true;
 			image_index = 0;
 			state = "attack one";
 		}
@@ -42,6 +44,7 @@ switch (state)
 		
 	case "roll":
 		#region Roll State
+		createHitBox = true;
 		set_state_sprite(s_skeleton_roll, 0.7, 0);
 		//Go to state move
 		if (image_index >= 6)
@@ -62,9 +65,10 @@ switch (state)
 		#region Attack state
 		set_state_sprite(s_skeleton_attack_one, 0.7, 0);
 		
-		if (animation_hit_frame_range(0, 4))
+		if ((animation_hit_frame_range(0, 4)) && createHitBox)
 		{
 			create_hitbox(x, y, self, s_skeleton_attack_one_damage, 4, 4, 5, image_xscale);
+			createHitBox = false;
 		}
 		
 		hsp = 0;
@@ -77,6 +81,7 @@ switch (state)
 		//Go to state attack
 		if (attack && animation_hit_frame_range(1, 4))
 		{
+			createHitBox = true;
 			state = "attack two";
 		}
 		
@@ -93,9 +98,10 @@ switch (state)
 		#region Attack state 2
 		set_state_sprite(s_skeleton_attack_two, 0.7, 0);
 		
-		if (animation_hit_frame_range(1, 4))
+		if ((animation_hit_frame_range(0, 4)) && createHitBox)
 		{
 			create_hitbox(x, y, self, s_skeleton_attack_two_damage, 4, 4, 5, image_xscale);
+			createHitBox = false;
 		}
 		
 		hsp = 0;
@@ -108,6 +114,7 @@ switch (state)
 		//Go to state attack
 		if (attack && animation_hit_frame_range(2, 4))
 		{
+			createHitBox = true;
 			state = "attack three";
 			image_index = 0;
 		}
@@ -125,9 +132,10 @@ switch (state)
 		#region Attack state three
 		set_state_sprite(s_skeleton_attack_three, 0.7, 0);
 		
-		if (animation_hit_frame_range(2, 5))
+		if ((animation_hit_frame_range(0, 4)) && createHitBox)
 		{
 			create_hitbox(x, y, self, s_skeleton_attack_three_damage, 4, 4, 5, image_xscale);
+			createHitBox = false;
 		}
 		
 		hsp = 0;
@@ -146,6 +154,6 @@ switch (state)
 		#endregion
 		break;
 }
-
+show_debug_message("-------------------" + string(createHitBox) + "-------------------")
 //Fliping the player
 if (hsp != 0) image_xscale = sign(hsp);
