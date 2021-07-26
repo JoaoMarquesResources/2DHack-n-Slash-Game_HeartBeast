@@ -48,12 +48,7 @@ switch(state)
 	case "knockback":
 		#region Knockback state
 		set_state_sprite(s_knight_hitstun, 0, 0);
-		image_xscale = -sign(knockback_speed);
-		move_and_colide(knockback_speed, 0);
-		knockback_speed = approach(knockback_speed, 0, 0.3);
-		if (knockback_speed == 0){
-			state = "chase";
-		}
+		knockback_state(s_knight_hitstun, "chase");
 		#endregion
 		break;
 	
