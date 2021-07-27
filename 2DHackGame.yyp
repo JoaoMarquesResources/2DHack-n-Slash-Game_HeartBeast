@@ -4,6 +4,7 @@
     {"id":{"name":"o_lifeform","path":"objects/o_lifeform/o_lifeform.yy",},"order":5,},
     {"id":{"name":"s_skeleton_mask","path":"sprites/s_skeleton_mask/s_skeleton_mask.yy",},"order":9,},
     {"id":{"name":"knockback_state","path":"scripts/knockback_state/knockback_state.yy",},"order":6,},
+    {"id":{"name":"o_hud","path":"objects/o_hud/o_hud.yy",},"order":8,},
     {"id":{"name":"s_wall20","path":"sprites/s_wall20/s_wall20.yy",},"order":15,},
     {"id":{"name":"s_clouds","path":"sprites/s_clouds/s_clouds.yy",},"order":0,},
     {"id":{"name":"s_knight_hitstun","path":"sprites/s_knight_hitstun/s_knight_hitstun.yy",},"order":3,},
