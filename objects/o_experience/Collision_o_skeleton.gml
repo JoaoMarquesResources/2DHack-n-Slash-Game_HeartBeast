@@ -10,9 +10,11 @@ with (other)
 		max_experience += max_experience;
 		if (hp < max_hp)
 		{
-			max_hp += 5;
-			hp += max_hp;
+			show_message("hp < max_hp")
+			hp += 5;
+			show_message("MAIS HP");
 		}
+		else show_message("hp > max_hp")
 		strength += 5;
 	}
 }
