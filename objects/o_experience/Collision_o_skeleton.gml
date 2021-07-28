@@ -8,14 +8,14 @@ with (other)
 		level += 1;
 		experience = experience - max_experience;
 		max_experience += max_experience;
+		strength += 5;
+	}
+	if (experience <= max_experience)
+	{
 		if (hp < max_hp)
 		{
-			show_message("hp < max_hp")
 			hp += 5;
-			show_message("MAIS HP");
 		}
-		else show_message("hp > max_hp")
-		strength += 5;
 	}
 }
 instance_destroy(); 

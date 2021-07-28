@@ -5,7 +5,7 @@ if (creator == noone || creator == other || ds_list_find_index(hit_objects, othe
 }
 
 other.hp -= damage;
-if (instance_exists(o_skeleton)) && (creator.object_index == o_skeleton) && (other.hp <= -1){
+if (instance_exists(o_skeleton)) && (creator.object_index == o_skeleton) && (other.hp <= 0){
 	o_skeleton.kills += 1;
 }
 ds_list_add(hit_objects, other); //Guardando na lista o id do objeto q colidiu

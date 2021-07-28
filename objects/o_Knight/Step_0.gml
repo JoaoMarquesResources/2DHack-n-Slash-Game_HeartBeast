@@ -33,7 +33,7 @@ switch(state)
 		
 		if ((animation_hit_frame_range(3, 4)) && createHitBox2)
 		{
-			create_hitbox(x, y, self, s_skeleton_attack_one_damage, 4, 4, 10, image_xscale);
+			create_hitboxKnight(x, y, self, s_skeleton_attack_one_damage, 4, 4, 10, image_xscale);
 			createHitBox2 = false;
 		}
 		

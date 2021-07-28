@@ -4,6 +4,7 @@
     {"id":{"name":"o_lifeform","path":"objects/o_lifeform/o_lifeform.yy",},"order":5,},
     {"id":{"name":"s_skeleton_mask","path":"sprites/s_skeleton_mask/s_skeleton_mask.yy",},"order":9,},
     {"id":{"name":"s_feather","path":"sprites/s_feather/s_feather.yy",},"order":1,},
+    {"id":{"name":"o_hitboxKnight","path":"objects/o_hitboxKnight/o_hitboxKnight.yy",},"order":11,},
     {"id":{"name":"s_crow","path":"sprites/s_crow/s_crow.yy",},"order":0,},
     {"id":{"name":"o_experience","path":"objects/o_experience/o_experience.yy",},"order":9,},
     {"id":{"name":"knockback_state","path":"scripts/knockback_state/knockback_state.yy",},"order":6,},
@@ -12,6 +13,7 @@
     {"id":{"name":"s_knight_hitstun","path":"sprites/s_knight_hitstun/s_knight_hitstun.yy",},"order":3,},
     {"id":{"name":"s_skeleton_idle","path":"sprites/s_skeleton_idle/s_skeleton_idle.yy",},"order":8,},
     {"id":{"name":"move_and_colide","path":"scripts/move_and_colide/move_and_colide.yy",},"order":0,},
+    {"id":{"name":"o_enemy_spawner","path":"objects/o_enemy_spawner/o_enemy_spawner.yy",},"order":12,},
     {"id":{"name":"animation_hit_frame","path":"scripts/animation_hit_frame/animation_hit_frame.yy",},"order":3,},
     {"id":{"name":"s_knight_die","path":"sprites/s_knight_die/s_knight_die.yy",},"order":2,},
     {"id":{"name":"f_one","path":"fonts/f_one/f_one.yy",},"order":0,},
@@ -46,6 +48,7 @@
     {"id":{"name":"s_graves","path":"sprites/s_graves/s_graves.yy",},"order":4,},
     {"id":{"name":"o_grave","path":"objects/o_grave/o_grave.yy",},"order":6,},
     {"id":{"name":"s_skeleton_attack_one_damage","path":"sprites/s_skeleton_attack_one_damage/s_skeleton_attack_one_damage.yy",},"order":1,},
+    {"id":{"name":"o_enemy_parent","path":"objects/o_enemy_parent/o_enemy_parent.yy",},"order":13,},
     {"id":{"name":"r_graveyard","path":"rooms/r_graveyard/r_graveyard.yy",},"order":0,},
   ],
   "Options": [
