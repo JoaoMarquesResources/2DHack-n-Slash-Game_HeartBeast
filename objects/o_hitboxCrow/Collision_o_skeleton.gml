@@ -15,12 +15,10 @@ if (instance_exists(o_skeleton))
 	//object_index = 7;
 	if (other.object_index = o_skeleton && other.hp <= -1)
 	{
-		show_debug_message("if")
 		var number = sprite_get_number(s_skeleton_bones);
 		
 		for (var i = 0; i < number; i++)
 		{
-			show_message("for loop")
 			var bx = other.x + random_range(-8, 8);
 			var by = other.y + random_range(-24, 8);
 			var bone = instance_create_layer(bx, by, "Instances", o_skeleton_bone);

@@ -19,3 +19,14 @@ function create_hitboxKnight(x, y, creator, sprite, knockback, lifespan, damage,
 	hitbox.damage = damage;
 	hitbox.image_xscale = xscale;
 }
+
+function create_hitboxCrow(x, y, creator, sprite, knockback, lifespan, damage, xscale)
+{
+	var hitbox = instance_create_layer(x, y, "Instances", o_hitboxCrow);
+	hitbox.mask_index = sprite;
+	hitbox.creator = creator;
+	hitbox.knockback = knockback;
+	hitbox.alarm[0] = lifespan;
+	hitbox.damage = damage;
+	hitbox.image_xscale = xscale;
+}

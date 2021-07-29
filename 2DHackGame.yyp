@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"o_hitboxCrow","path":"objects/o_hitboxCrow/o_hitboxCrow.yy",},"order":15,},
     {"id":{"name":"s_knight_walk","path":"sprites/s_knight_walk/s_knight_walk.yy",},"order":0,},
     {"id":{"name":"o_lifeform","path":"objects/o_lifeform/o_lifeform.yy",},"order":5,},
     {"id":{"name":"s_skeleton_mask","path":"sprites/s_skeleton_mask/s_skeleton_mask.yy",},"order":9,},
