@@ -16,7 +16,7 @@ if (instance_exists(o_skeleton))
 	if (other.object_index = o_skeleton && other.hp <= -1)
 	{
 		var number = sprite_get_number(s_skeleton_bones);
-		
+		add_screenshake(8, 8);
 		for (var i = 0; i < number; i++)
 		{
 			var bx = other.x + random_range(-8, 8);

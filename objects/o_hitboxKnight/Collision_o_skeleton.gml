@@ -17,7 +17,7 @@ if (instance_exists(o_skeleton))
 	{
 		show_debug_message("if")
 		var number = sprite_get_number(s_skeleton_bones);
-		
+		add_screenshake(8, 8);
 		for (var i = 0; i < number; i++)
 		{
 			show_message("for loop")
