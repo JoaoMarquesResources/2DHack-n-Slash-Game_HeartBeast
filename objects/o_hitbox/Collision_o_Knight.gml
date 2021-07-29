@@ -1,5 +1,4 @@
 /// @description desc
-global.id = self.id
 if (creator == noone || creator == other || ds_list_find_index(hit_objects, other) != -1)
 {
 	exit;

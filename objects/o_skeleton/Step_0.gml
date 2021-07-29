@@ -166,6 +166,7 @@ switch (state)
 		break;
 }
 
+show_debug_message(hp);
 //show_debug_message("-------------------" + string(createHitBox) + "-------------------")
 //Fliping the player
 if (hsp != 0) image_xscale = sign(hsp);

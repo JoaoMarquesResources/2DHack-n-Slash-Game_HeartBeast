@@ -8,6 +8,7 @@
     {"id":{"name":"s_crow","path":"sprites/s_crow/s_crow.yy",},"order":0,},
     {"id":{"name":"o_experience","path":"objects/o_experience/o_experience.yy",},"order":9,},
     {"id":{"name":"knockback_state","path":"scripts/knockback_state/knockback_state.yy",},"order":6,},
+    {"id":{"name":"o_skeleton_bone","path":"objects/o_skeleton_bone/o_skeleton_bone.yy",},"order":14,},
     {"id":{"name":"o_hud","path":"objects/o_hud/o_hud.yy",},"order":8,},
     {"id":{"name":"s_clouds","path":"sprites/s_clouds/s_clouds.yy",},"order":0,},
     {"id":{"name":"s_knight_hitstun","path":"sprites/s_knight_hitstun/s_knight_hitstun.yy",},"order":3,},
