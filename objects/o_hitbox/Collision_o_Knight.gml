@@ -9,6 +9,13 @@ other.hp -= damage;
 if (instance_exists(o_skeleton)) && (creator.object_index == o_skeleton) && (other.hp <= -1){
 	o_skeleton.kills += 1;
 }
+
+if (object_index != o_skeleton)
+{
+	show_debug_message("else")
+	o_enemy_parent.alarm[0] = 120;
+}
+
 ds_list_add(hit_objects, other); //Guardando na lista         o id do objeto q colidiu
 other.state = "knockback";
 other.knockback_speed = knockback * image_xscale; //* image_xscale para virar certo

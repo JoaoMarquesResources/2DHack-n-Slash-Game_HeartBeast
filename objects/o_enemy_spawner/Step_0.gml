@@ -9,7 +9,7 @@ if (instance_exists(o_skeleton)) && (enemy_count < o_skeleton.kills / 4)
 		exit;
 	}
 	
-	var enemy = choose(o_Knight, o_crow, o_crow);
+	var enemy = choose(o_Knight, o_crow);
 	
 	var new_x = random_range(240, room_width - 240);
 	while ((point_distance(new_x, 0, o_skeleton.x, 0) < 200))

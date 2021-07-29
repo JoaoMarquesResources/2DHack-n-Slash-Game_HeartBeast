@@ -36,6 +36,7 @@
     {"id":{"name":"s_wall","path":"sprites/s_wall/s_wall.yy",},"order":2,},
     {"id":{"name":"animation_hit_frame_range","path":"scripts/animation_hit_frame_range/animation_hit_frame_range.yy",},"order":1,},
     {"id":{"name":"o_Wall","path":"objects/o_Wall/o_Wall.yy",},"order":1,},
+    {"id":{"name":"s_enemy_healthbar","path":"sprites/s_enemy_healthbar/s_enemy_healthbar.yy",},"order":25,},
     {"id":{"name":"o_Camera","path":"objects/o_Camera/o_Camera.yy",},"order":16,},
     {"id":{"name":"s_knight_mask","path":"sprites/s_knight_mask/s_knight_mask.yy",},"order":5,},
     {"id":{"name":"s_knight_idle","path":"sprites/s_knight_idle/s_knight_idle.yy",},"order":4,},
