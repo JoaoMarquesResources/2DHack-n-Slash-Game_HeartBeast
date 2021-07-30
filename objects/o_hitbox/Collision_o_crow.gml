@@ -16,7 +16,7 @@ if (instance_exists(o_skeleton)) && (creator.object_index == o_skeleton) && (oth
 
 if (object_index != o_skeleton)
 {
-	show_debug_message("else")
+	other.state = "death"; 
 	o_enemy_parent.alarm[0] = 120;
 	add_screenshake(2, 5);
 }

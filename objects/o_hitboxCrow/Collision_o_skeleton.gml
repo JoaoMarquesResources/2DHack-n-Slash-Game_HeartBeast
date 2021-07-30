@@ -13,7 +13,7 @@ if (instance_exists(o_skeleton))
 	}
 	
 	//object_index = 7;
-	if (other.object_index = o_skeleton)
+	if (other.object_index == o_skeleton)
 	{
 		add_screenshake(4, 8);
 		if (other.hp <= -1)

@@ -53,6 +53,10 @@ switch(state)
 		#endregion
 		break;
 	
+	case "death":
+		death_state(s_knight_die, 5);
+		break;
+	
 	default:
 		show_debug_message("--------------------State " + state + " does not exists-----------------");
 		state = "chase";

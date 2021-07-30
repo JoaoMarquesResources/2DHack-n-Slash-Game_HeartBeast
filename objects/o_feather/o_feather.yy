@@ -1,19 +1,13 @@
 {
   "spriteId": {
-    "name": "s_knight_idle",
-    "path": "sprites/s_knight_idle/s_knight_idle.yy",
+    "name": "s_feather",
+    "path": "sprites/s_feather/s_feather.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "s_knight_mask",
-    "path": "sprites/s_knight_mask/s_knight_mask.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "o_enemy_parent",
-    "path": "objects/o_enemy_parent/o_enemy_parent.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -29,7 +23,6 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -38,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_Knight",
+  "name": "o_feather",
   "tags": [],
   "resourceType": "GMObject",
 }

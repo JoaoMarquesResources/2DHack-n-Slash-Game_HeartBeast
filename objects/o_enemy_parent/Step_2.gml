@@ -1,7 +1,7 @@
 /// @description desc
-if (hp < 0)
+if (hp < 0 && state != "death")
 {
-	instance_destroy();
+	state = "death";
 	
 	repeat (experience)
 	{

@@ -16,7 +16,7 @@ if (instance_exists(o_skeleton))
 	if (other.object_index = o_skeleton)
 	{
 		add_screenshake(4, 8);
-		if (other.hp <= -1)
+		if (other.hp <= 0)
 		{
 			var number = sprite_get_number(s_skeleton_bones);
 			add_screenshake(8, 8);
@@ -33,7 +33,7 @@ if (instance_exists(o_skeleton))
 		}
 	}
 }
-ds_list_add(hit_objects, other); //Guardando na lista         o id do objeto q colidiu
+ds_list_add(hit_objects, other); //Guardando na lista o id do objeto q colidiu
 other.state = "knockback";
 other.knockback_speed = knockback * image_xscale; //* image_xscale para virar certo
 

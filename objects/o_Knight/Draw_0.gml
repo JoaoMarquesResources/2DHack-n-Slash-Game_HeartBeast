@@ -1,7 +1,7 @@
 /// @description desc
 draw_self();
-/*
 global.delay--;
+if (state == "death") exit;
 if (global.delay > 0)
 {
 	var height = sprite_height;
