@@ -1,5 +1,6 @@
 /// @description desc
 show_debug_message("createHitBox2: " + string(createHitBox2));
+
 switch(state)
 {
 	case "chase":
@@ -48,8 +49,12 @@ switch(state)
 	
 	case "knockback":
 		#region Knockback state
-		set_state_sprite(s_knight_hitstun, 0, 0);
-		knockback_state(s_knight_hitstun, "chase");
+		if (knockback_var)
+		{
+			set_state_sprite(s_knight_hitstun, 0, 0);
+			knockback_state(s_knight_hitstun, "chase");
+		}
+		else state = "death";
 		#endregion
 		break;
 	
@@ -62,3 +67,4 @@ switch(state)
 		state = "chase";
 		break;
 }
+if (state == "death") knockback_var = false;

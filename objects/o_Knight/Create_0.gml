@@ -5,4 +5,6 @@ attack_range = 42;
 chase_speed = 1;
 experience = 5;
 
+knockback_var = true;
+
 createHitBox2 = true;

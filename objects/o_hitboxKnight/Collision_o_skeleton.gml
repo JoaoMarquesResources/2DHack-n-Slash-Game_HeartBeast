@@ -7,7 +7,7 @@ other.hp -= damage;
 if (instance_exists(o_skeleton))
 {
 	show_debug_message(o_skeleton.hp);
-	if ((creator.object_index == o_skeleton) && (other.hp <= -1))
+	if ((creator.object_index == o_skeleton) && (other.hp <= -1) && (o_Knight.state != "death"))
 	{
 		o_skeleton.kills += 1;
 	}
