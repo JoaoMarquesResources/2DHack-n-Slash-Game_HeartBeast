@@ -1,5 +1,4 @@
 /// @description desc
-global.knight = other.id;
 if (creator == noone || creator == other || ds_list_find_index(hit_objects, other) != -1)
 {
 	exit;
@@ -18,7 +17,6 @@ if (instance_exists(o_skeleton)) && (creator.object_index == o_skeleton) && (oth
 
 if (object_index != o_skeleton)
 {
-	global.delay = 120;
 	add_screenshake(2, 5);
 }
 

@@ -1,4 +1,4 @@
-function move_and_colide(argumento, argumento2){
+function move_and_collide(argumento, argumento2){
 	if (!place_meeting(x + argumento, y, o_Wall))
 	{
 		x += argumento;

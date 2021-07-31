@@ -16,6 +16,6 @@ function death_state(death_sprite, index)
 			instance_destroy();
 		}
 	}
-	move_and_colide(knockback_speed, 0);
+	move_and_collide(knockback_speed, 0);
 	knockback_speed = approach(knockback_speed, 0, 0.3);
 }

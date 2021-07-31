@@ -18,7 +18,7 @@ switch(state)
 		var distance_to_player = point_distance(x, y, o_skeleton.x, o_skeleton.y);
 		if (distance_to_player > attack_range)
 		{
-			move_and_colide(image_xscale * chase_speed, 0);
+			move_and_collide(image_xscale * chase_speed, 0);
 		}
 		else
 		{
