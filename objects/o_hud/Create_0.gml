@@ -8,3 +8,5 @@ if (!instance_exists(o_skeleton)) exit;
 draw_hp = o_skeleton.hp;
 draw_max_hp = o_skeleton.max_hp;
 draw_set_font(f_one);
+
+audio_play_sound(a_music, 4, true);

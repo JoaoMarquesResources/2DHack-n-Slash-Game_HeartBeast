@@ -60,7 +60,7 @@ switch (state)
 		if (animation_hit_frame_range(7, 10) && criar_hit_box)
 		{
 			create_hitboxBoss(x, y, self, s_boss_attack_damage, 10, 3, 20, image_xscale);
-			add_screenshake(10, 16);
+			add_screenshake(15, 16);
 			criar_hit_box = false;
 		}
 		

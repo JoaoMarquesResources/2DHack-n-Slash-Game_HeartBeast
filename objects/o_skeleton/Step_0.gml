@@ -25,6 +25,15 @@ switch (state)
 			image_speed = 0.5;
 		}
 		
+		if (hsp != 0)
+		{
+			if (animation_hit_frame_range(2, 2) || animation_hit_frame_range(5, 5))
+			{
+				//ESTE IF TA ESTRANHO N DETETA BEM AS CENAS, secalhas tenta fazer um if à parte
+				audio_play_sound(a_footstep, 2, false);
+			}
+		}
+		
 		//Go to state attack
 		if (attack)
 		{
