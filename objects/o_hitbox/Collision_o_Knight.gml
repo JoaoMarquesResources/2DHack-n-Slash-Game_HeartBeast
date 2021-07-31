@@ -1,4 +1,5 @@
-/// @description desc~a
+/// @description desc
+global.knight = other.id;
 if (creator == noone || creator == other || ds_list_find_index(hit_objects, other) != -1)
 {
 	exit;
@@ -11,7 +12,7 @@ repeat (10)
 	instance_create_layer(other.x, other.y - 12, "Effects", o_hit_effect);
 }
 
-if (instance_exists(o_skeleton)) && (creator.object_index == o_skeleton) && (other.hp <= -1) && (other.state != "death"){
+if (instance_exists(o_skeleton)) && (creator.object_index == o_skeleton) && (other.hp <= 0) && (other.state != "death"){
 	o_skeleton.kills += 1;
 }
 

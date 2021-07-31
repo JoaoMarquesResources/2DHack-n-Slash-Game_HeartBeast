@@ -20,5 +20,6 @@ if (instance_exists(o_skeleton)) && (enemy_count < o_skeleton.kills / 4)
 	{
 		new_x = new_x;
 	}
+	show_message("CRIA");
 	instance_create_layer(new_x, o_skeleton.y, "Instances", enemy);
 }
