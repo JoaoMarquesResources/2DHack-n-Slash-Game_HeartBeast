@@ -17,26 +17,11 @@ switch (state)
 		if (left || right)
 		{
 			sprite_index = s_skeleton_run;
-			image_speed = 0.7;
 		}
 		if (left && right) || (hsp = 0)
 		{
 			sprite_index = s_skeleton_idle;
 			image_speed = 0.5;
-		}
-		
-		if (right || left)
-		{
-			if (round(image_index) == 2)
-			{
-				audio_play_sound(a_footstep, 2, false);
-			}
-			
-			if (animation_hit_frame(5))
-			{
-				audio_play_sound(a_footstep, 2, false);
-			}
-			show_debug_message(image_index);
 		}
 		
 		//Go to state attack
@@ -45,6 +30,19 @@ switch (state)
 			createHitBox = true;
 			image_index = 0;
 			state = "attack one";
+		}
+		
+		if (hsp != 0)
+		{
+			if (animation_hit_frame(2))
+			{
+				audio_play_sound(a_footstep, 2, false);
+			}
+			
+			if (animation_hit_frame(5))
+			{
+				audio_play_sound(a_footstep, 2, false);
+			}
 		}
 		
 		//Go to state Rolling
@@ -81,6 +79,7 @@ switch (state)
 		
 		if ((animation_hit_frame_range(0, 4)) && createHitBox)
 		{
+			audio_play_sound(a_miss, 3, false);
 			create_hitbox(x, y, self, s_skeleton_attack_one_damage, 3, 4, 5, image_xscale);
 			createHitBox = false;
 		}
@@ -114,6 +113,7 @@ switch (state)
 		
 		if ((animation_hit_frame_range(1, 4)) && createHitBox)
 		{
+			audio_play_sound(a_miss, 3, false);
 			create_hitbox(x, y, self, s_skeleton_attack_two_damage, 3, 4, 5, image_xscale);
 			createHitBox = false;
 		}
@@ -148,6 +148,7 @@ switch (state)
 		
 		if ((animation_hit_frame_range(2, 5)) && createHitBox)
 		{
+			audio_play_sound(a_miss, 3, false);
 			create_hitbox(x, y, self, s_skeleton_attack_three_damage, 5, 4, 5, image_xscale);
 			createHitBox = false;
 		}

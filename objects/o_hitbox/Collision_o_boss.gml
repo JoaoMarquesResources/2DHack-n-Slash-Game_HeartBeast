@@ -5,6 +5,7 @@ if (creator == noone || creator == other || ds_list_find_index(hit_objects, othe
 }
 
 other.hp -= damage;
+audio_play_sound(a_medium_hit, 4, false);other.hp -= damage;
 
 repeat (10)
 {

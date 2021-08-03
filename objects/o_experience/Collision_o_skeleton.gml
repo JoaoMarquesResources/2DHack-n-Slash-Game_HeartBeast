@@ -1,5 +1,6 @@
 /// @description desc
 if (!instance_exists(other)) exit;
+audio_play_sound(a_expr, 1, false);
 with (other)
 {
 	experience++;

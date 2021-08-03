@@ -59,6 +59,8 @@ switch (state)
 		set_state_sprite(s_boss_attack, 0.5, 0);
 		if (animation_hit_frame_range(7, 10) && criar_hit_box)
 		{
+			audio_play_sound(a_big_hit, 5, false);
+			audio_play_sound(a_medium_hit, 3, false);
 			create_hitboxBoss(x, y, self, s_boss_attack_damage, 10, 3, 20, image_xscale);
 			add_screenshake(15, 16);
 			criar_hit_box = false;
