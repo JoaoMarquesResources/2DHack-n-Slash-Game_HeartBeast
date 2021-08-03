@@ -30,6 +30,14 @@ if (instance_exists(o_skeleton))
 				bone.image_index = i;
 				if (i == 5) bone.image_angle = 130;
 			}
+			ini_open("save.ini")
+			ini_write_real("Scores", "Kills", other.kills);
+			var highscore = ini_read_real("Scores", "highscore", 0);
+			if (other.kills > highscore)
+			{
+				ini_write_real("Scores", "Highscore", other.kills);
+			}
+			ini_close();
 		}
 	}
 }
